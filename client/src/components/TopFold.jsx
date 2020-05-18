@@ -37,9 +37,7 @@ const TopFoldWrapper = styled.div`
     font-weight: 400;
     letter-spacing: 3.5rem;
 
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
+    animation: moveInLeft 2s ease-out;
 
     /* animation-iteration-count: 3; */
     /* animation-delay: 3s; */
@@ -51,17 +49,13 @@ const TopFoldWrapper = styled.div`
     font-weight: 700;
     letter-spacing: 1.75rem;
 
-    animation: moveInRight 1s ease-out;
+    animation: moveInRight 2s ease-out;
   }
 
   @keyframes moveInLeft {
     0% {
       opacity: 0;
       transform: translateX(-10rem);
-    }
-
-    80% {
-      transform: translateX(1rem);
     }
 
     100% {
@@ -76,10 +70,6 @@ const TopFoldWrapper = styled.div`
       transform: translateX(10rem);
     }
 
-    80% {
-      transform: translateX(-1rem);
-    }
-
     100% {
       opacity: 1;
       transform: translate(0);
@@ -88,13 +78,27 @@ const TopFoldWrapper = styled.div`
 
   @keyframes moveInButton {
     0% {
-      opacity: 0;
-      transform: translateY(3rem);
+      opacity: 1;
+      height: 0px;
+      font-size: 0px;
+      border-radius: 100px;
+      background-color: black;
+      color: black;
+      border-color: transparent;
+    }
+
+    50% {
+      font-size: 0px;
     }
 
     100% {
       opacity: 1;
-      transform: translate(0);
+      height: 5.5rem;
+      font-size: 1.6 rem;
+      border-radius: 0;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.233);
+      border-color: black;
     }
   }
 
@@ -127,7 +131,7 @@ const TopFoldWrapper = styled.div`
   }
 
   .btn--white {
-    background-color: rgba(0, 0, 0, 0.468);
+    background-color: rgba(0, 0, 0, 0.233);
     color: rgba(0, 0, 0, 0.468);
   }
 
@@ -142,13 +146,14 @@ const TopFoldWrapper = styled.div`
     left: 0;
     z-index: -1;
     transition: all 0.4s;
-    background-color: rgba(0, 0, 0, 0.468);
-    color: white;
+    background-color: rgba(0, 0, 0, 0.233);
+    color: transparent;
     border: black solid 1px;
   }
 
   .btn--white::after {
     background-color: rgba(0, 0, 0, 0.249);
+    animation: moveInButton ease-out 1.5s;
   }
 
   .btn:hover::after {
@@ -157,7 +162,7 @@ const TopFoldWrapper = styled.div`
   }
 
   .btn--animated {
-    animation: moveInButton 0.5 ease-out 0.75s;
+    animation: moveInButton ease-out 1.5s;
     animation-fill-mode: backwards;
   }
 `;
