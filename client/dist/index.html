@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>JaredRothenberg</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
 
   <body>
-    <main>
-      <div class="dank-ass-loader">
+    <main class="loader-parent">
+      <div class="loader">
         <div class="row">
           <div class="arrow up outer outer-18"></div>
           <div class="arrow down outer outer-17"></div>
@@ -44,6 +45,11 @@
         </div>
       </div>
     </main>
+    <script>
+      $(window).on("load", function () {
+        $(".loader-parent").fadeOut(1000);
+      });
+    </script>
     <div id="app_jared"></div>
     <script type="text/javascript" src="bundle.js"></script>
   </body>

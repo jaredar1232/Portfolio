@@ -1,18 +1,42 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  color: #777;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+
+/* LOADER */
 main {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: linear-gradient(to right bottom, #dae2f8, #d6a4a4); */
   background: #0e1119;
+  position: absolute;
+  z-index: 1;
 }
-.dank-ass-loader {
+.loader {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.dank-ass-loader .row {
+.loader .row {
   display: flex;
 }
 .arrow {
