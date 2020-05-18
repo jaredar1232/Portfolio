@@ -137,5 +137,29 @@ main {
 }
 
 /* .btn--white {
-    background-color: rgba(0, 0, 0, 0.233);
+  background-color: rgba(78, 232, 243, 0.8);
+} */
+
+/* @keyframes moveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-10rem);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+
+  @keyframes moveInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(10rem);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
   } */

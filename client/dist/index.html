@@ -54,7 +54,9 @@
     </main>
     <script>
       $(window).on("load", function () {
-        $(".loader-parent").fadeOut(1000);
+        setTimeout(function () {
+          $(".loader-parent").fadeOut(500);
+        }, 1000);
       });
     </script>
     <div id="app_jared"></div>

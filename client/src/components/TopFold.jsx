@@ -35,9 +35,10 @@ const TopFoldWrapper = styled.div`
     display: block;
     font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 3.5rem;
+    letter-spacing: 3rem;
 
-    animation: moveInLeft 2s ease-out;
+    animation: moveInTop 1.5s ease-out;
+    animation-delay: 0.5s;
 
     /* animation-iteration-count: 3; */
     /* animation-delay: 3s; */
@@ -49,56 +50,52 @@ const TopFoldWrapper = styled.div`
     font-weight: 700;
     letter-spacing: 1.75rem;
 
-    animation: moveInRight 2s ease-out;
+    animation: fadeIn 2.5s;
+    animation-delay: 2.5s;
+    animation-fill-mode: backwards;
   }
 
-  @keyframes moveInLeft {
+  @keyframes moveInTop {
     0% {
       opacity: 0;
-      transform: translateX(-10rem);
+      transform: translateY(-20rem);
     }
 
     100% {
       opacity: 1;
-      transform: translate(0);
+      transform: translateY(0);
     }
   }
 
-  @keyframes moveInRight {
+  @keyframes fadeIn {
     0% {
       opacity: 0;
-      transform: translateX(10rem);
     }
 
     100% {
       opacity: 1;
-      transform: translate(0);
     }
   }
 
   @keyframes moveInButton {
     0% {
       opacity: 1;
-      height: 0px;
+
       font-size: 0px;
       border-radius: 100px;
-      background-color: black;
+      background-color: transparent;
       color: black;
       border-color: transparent;
     }
 
-    50% {
-      font-size: 0px;
-    }
-
     100% {
       opacity: 1;
-      height: 5.5rem;
+
       font-size: 1.6 rem;
       border-radius: 0;
-      color: white;
-      background-color: rgba(0, 0, 0, 0.233);
-      border-color: black;
+      color: lightgrey;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-color: darkgrey;
     }
   }
 
@@ -112,26 +109,30 @@ const TopFoldWrapper = styled.div`
     transition: all 0.2s;
     position: relative;
     font-size: 1.6rem;
-    background-color: rgba(0, 0, 0, 0.468);
-    color: white;
-    border: black solid 1px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: lightgrey;
+    border: darkgrey solid 1px;
+    -webkit-backface-visibility: hidden;
   }
 
   .btn:hover {
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.8);
+    border: rgba(78, 232, 243, 0.8) solid 1px;
+    color: rgba(78, 232, 243, 0.8);
   }
 
   .btn:active {
     transform: translateY(-1px);
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
-    background-color: rgba(0, 0, 0, 0.303);
-    color: white;
-    border: black solid 1px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: lightgrey;
+    border: darkgrey solid 1px;
   }
 
   .btn--white {
-    background-color: rgba(0, 0, 0, 0.233);
+    background-color: rgba(0, 0, 0, 0.2);
     color: rgba(0, 0, 0, 0.468);
   }
 
@@ -146,14 +147,16 @@ const TopFoldWrapper = styled.div`
     left: 0;
     z-index: -1;
     transition: all 0.4s;
-    background-color: rgba(0, 0, 0, 0.233);
+    background-color: rgba(0, 0, 0, 0.5);
     color: transparent;
-    border: black solid 1px;
+    border: lightgrey solid 1px;
   }
 
   .btn--white::after {
-    background-color: rgba(0, 0, 0, 0.249);
-    animation: moveInButton ease-out 1.5s;
+    background-color: rgba(0, 0, 0, 0.2);
+    animation: moveInButton 1s;
+    animation-fill-mode: backwards;
+    animation-delay: 1.5s;
   }
 
   .btn:hover::after {
@@ -162,8 +165,9 @@ const TopFoldWrapper = styled.div`
   }
 
   .btn--animated {
-    animation: moveInButton ease-out 1.5s;
+    animation: moveInButton 1s;
     animation-fill-mode: backwards;
+    animation-delay: 1.5s;
   }
 `;
 
