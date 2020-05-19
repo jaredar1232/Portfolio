@@ -12,8 +12,7 @@ const TopFoldWrapper = styled.div`
       url(https://jaredsportfolio.s3-us-west-1.amazonaws.com/LandingImageBlue.jpg);
     background-size: cover;
     background-position: right;
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 99%);
   }
 
   .header__text-box {
@@ -39,6 +38,7 @@ const TopFoldWrapper = styled.div`
 
     animation: moveInTop 1.5s ease-out;
     animation-delay: 0.5s;
+    animation-fill-mode: backwards;
 
     /* animation-iteration-count: 3; */
     /* animation-delay: 3s; */
@@ -80,7 +80,6 @@ const TopFoldWrapper = styled.div`
   @keyframes moveInButton {
     0% {
       opacity: 1;
-
       font-size: 0px;
       border-radius: 100px;
       background-color: transparent;
@@ -169,23 +168,32 @@ const TopFoldWrapper = styled.div`
     animation-fill-mode: backwards;
     animation-delay: 1.5s;
   }
+
+  .bottom-border {
+    clip-path: polygon(0 0, 100% 0, 100% 86vh, 0 100%);
+    background-color: white;
+    top: 0;
+    height: 100vh;
+  }
 `;
 
 export default class TopFold extends Component {
   render() {
     return (
       <TopFoldWrapper>
-        <header className="header">
-          <div className="header__text-box">
-            <h1 className="heading-primary">
-              <span className="heading-primary--main">Jared Rothenberg</span>
-              <span className="heading-primary--sub">Software Engineer</span>
-            </h1>
-            <a href="#" className="btn btn--white btn--animated">
-              Explore
-            </a>
-          </div>
-        </header>
+        <div className="bottom-border">
+          <header className="header">
+            <div className="header__text-box">
+              <h1 className="heading-primary">
+                <span className="heading-primary--main">Jared Rothenberg</span>
+                <span className="heading-primary--sub">Software Engineer</span>
+              </h1>
+              <a href="#" className="btn btn--white btn--animated">
+                Explore
+              </a>
+            </div>
+          </header>
+        </div>
       </TopFoldWrapper>
     );
   }

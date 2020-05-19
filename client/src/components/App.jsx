@@ -1,6 +1,7 @@
 import React from "react";
 
 import TopFold from "../components/TopFold.jsx";
+import AboutMe from "../components/AboutMe.jsx";
 
 class App extends React.Component {
   constructor(props) {
@@ -18,6 +19,7 @@ class App extends React.Component {
     return (
       <div>
         <TopFold />
+        <AboutMe />
       </div>
     );
   }

@@ -21,7 +21,7 @@ body {
 }
 
 /* LOADER */
-main {
+/* .loader-parent {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -134,7 +134,9 @@ main {
   100% {
     opacity: 0.1;
   }
-}
+} */
+
+/* ////////////TEST CSS////////////// */
 
 /* .btn--white {
   background-color: rgba(78, 232, 243, 0.8);
@@ -163,3 +165,12 @@ main {
       transform: translate(0);
     }
   } */
+
+/* // about me blue */
+.section-about {
+  background-color: #181e2e;
+  color: rgb(102, 201, 255);
+  color: rgb(120, 139, 249);
+  /* background-color: #0e1119; */
+  border-bottom: 1px solid white;
+}
