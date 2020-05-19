@@ -171,7 +171,7 @@ const TopFoldWrapper = styled.div`
 
   .bottom-border {
     clip-path: polygon(0 0, 100% 0, 100% 86vh, 0 100%);
-    background-color: white;
+    background-color: lightgrey;
     top: 0;
     height: 100vh;
   }

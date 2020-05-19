@@ -2,6 +2,7 @@ import React from "react";
 
 import TopFold from "../components/TopFold.jsx";
 import AboutMe from "../components/AboutMe.jsx";
+import Projects from "../components/Projects.jsx";
 
 class App extends React.Component {
   constructor(props) {
@@ -20,6 +21,7 @@ class App extends React.Component {
       <div>
         <TopFold />
         <AboutMe />
+        <Projects />
       </div>
     );
   }
