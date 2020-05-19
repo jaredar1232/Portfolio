@@ -167,10 +167,12 @@ body {
   } */
 
 /* // about me blue */
-.section-about {
+/* .section-about {
   background-color: #181e2e;
   color: rgb(102, 201, 255);
   color: rgb(120, 139, 249);
-  /* background-color: #0e1119; */
+  background-color: #0e1119;
   border-bottom: 1px solid white;
-}
+  clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
+} */

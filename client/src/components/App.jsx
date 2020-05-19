@@ -3,6 +3,9 @@ import React from "react";
 import TopFold from "../components/TopFold.jsx";
 import AboutMe from "../components/AboutMe.jsx";
 import Projects from "../components/Projects.jsx";
+import Resume from "../components/Resume.jsx";
+import Contact from "../components/ContactMe.jsx";
+import Footer from "../components/Footer.jsx";
 
 class App extends React.Component {
   constructor(props) {
@@ -22,6 +25,9 @@ class App extends React.Component {
         <TopFold />
         <AboutMe />
         <Projects />
+        <Resume />
+        <Contact />
+        <Footer />
       </div>
     );
   }
