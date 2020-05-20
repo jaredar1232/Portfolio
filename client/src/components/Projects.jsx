@@ -132,11 +132,20 @@ export default class Projects extends Component {
             <div className="project-container">
               <h3 className="heading-tertiary">Nike Mock Up</h3>
               <div className="image-container--1">
-                <img
+                <video
+                  width="100%"
+                  height="auto"
+                  muted
+                  loop
+                  autoPlay
                   className="project"
-                  src="https://jaredsportfolio.s3-us-west-1.amazonaws.com/Nike.gif"
-                  alt="animated"
-                />
+                >
+                  <source
+                    src="https://jaredsportfolio.s3-us-west-1.amazonaws.com/Nike.mp4"
+                    type="video/mp4"
+                  ></source>
+                  Your browser does not support the video tag.
+                </video>
               </div>
               <div className="btn-container">
                 <div className="github-container">
@@ -163,11 +172,20 @@ export default class Projects extends Component {
             <div className="project-container">
               <h3 className="heading-tertiary">Streak Tracker</h3>
               <div className="image-container--2">
-                <img
+                <video
+                  width="100%"
+                  height="auto"
+                  muted
+                  loop
+                  autoPlay
                   className="project"
-                  src="https://jaredsportfolio.s3-us-west-1.amazonaws.com/Streak.gif"
-                  alt="animated"
-                />
+                >
+                  <source
+                    src="https://jaredsportfolio.s3-us-west-1.amazonaws.com/Streak.mp4"
+                    type="video/mp4"
+                  ></source>
+                  Your browser does not support the video tag.
+                </video>
               </div>
               <a
                 href="https://github.com/jaredar1232/Streak-Activity-Tracker"
@@ -189,11 +207,20 @@ export default class Projects extends Component {
             <div className="project-container">
               <h3 className="heading-tertiary">System Design</h3>
               <div className="image-container--3">
-                <img
+                <video
+                  width="100%"
+                  height="auto"
+                  muted
+                  loop
+                  autoPlay
                   className="project"
-                  src="https://jaredsportfolio.s3-us-west-1.amazonaws.com/SystemDesign.gif"
-                  alt="animated"
-                />
+                >
+                  <source
+                    src="https://jaredsportfolio.s3-us-west-1.amazonaws.com/SystemDesign.mp4"
+                    type="video/mp4"
+                  ></source>
+                  Your browser does not support the video tag.
+                </video>
               </div>
               <a
                 href="https://github.com/jaredar1232/System-Design--BestBuy"
