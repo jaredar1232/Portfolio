@@ -188,7 +188,7 @@ export default class TopFold extends Component {
                 <span className="heading-primary--main">Jared Rothenberg</span>
                 <span className="heading-primary--sub">Software Engineer</span>
               </h1>
-              <a href="#" className="btn btn--white btn--animated">
+              <a href="#about-me" className="btn btn--white btn--animated">
                 Explore
               </a>
             </div>

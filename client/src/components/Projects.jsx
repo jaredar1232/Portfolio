@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import ModalButton from "../components/subcomponents/ModalButton.jsx";
 
 const ProjectsWrapper = styled.div`
   .project-page-buffer {
@@ -90,7 +89,7 @@ const ProjectsWrapper = styled.div`
     margin: 1rem 5rem 0 5rem;
   }
 
-  .github-container {
+  .btn-position {
     justify-self: center;
   }
 
@@ -126,6 +125,38 @@ const ProjectsWrapper = styled.div`
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     transform: translateY(0);
   }
+
+  .btn--2 {
+    font-size: 2rem;
+    font-weight: 700;
+    background-image: linear-gradient(
+      to right bottom,
+      rgb(102, 201, 255),
+      rgb(120, 139, 249)
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(120, 139, 249);
+    padding: 5px;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+
+  .btn--2:hover,
+  .btn--2:focus {
+    -webkit-background-clip: unset;
+    color: white;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+    border-radius: 2px;
+  }
+
+  .btn--2:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(0);
+  }
 `;
 
 export default class Projects extends Component {
@@ -156,7 +187,7 @@ export default class Projects extends Component {
               </video>
             </div>
             <div className="btn-container">
-              <div className="github-container">
+              <div className="btn-position">
                 <a
                   href="https://github.com/jaredar1232/Nike-Mock-Up"
                   className="btn-text"
@@ -173,7 +204,19 @@ export default class Projects extends Component {
                   &nbsp; Github
                 </a>
               </div>
-              <ModalButton />
+              <div className="btn-position">
+                <div className="btn--2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-.001 5.75c.69 0 1.251.56 1.251 1.25s-.561 1.25-1.251 1.25-1.249-.56-1.249-1.25.559-1.25 1.249-1.25zm2.001 12.25h-4v-1c.484-.179 1-.201 1-.735v-4.467c0-.534-.516-.618-1-.797v-1h3v6.265c0 .535.517.558 1 .735v.999z" />
+                  </svg>
+                  &nbsp; Details
+                </div>
+              </div>
             </div>
           </div>
 
@@ -196,7 +239,7 @@ export default class Projects extends Component {
               </video>
             </div>
             <div className="btn-container">
-              <div className="github-container">
+              <div className="btn-position">
                 <a
                   href="https://github.com/jaredar1232/Streak-Activity-Tracker"
                   className="btn-text"
@@ -213,7 +256,19 @@ export default class Projects extends Component {
                   &nbsp; Github
                 </a>
               </div>
-              <ModalButton />
+              <div className="btn-position">
+                <div className="btn--2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-.001 5.75c.69 0 1.251.56 1.251 1.25s-.561 1.25-1.251 1.25-1.249-.56-1.249-1.25.559-1.25 1.249-1.25zm2.001 12.25h-4v-1c.484-.179 1-.201 1-.735v-4.467c0-.534-.516-.618-1-.797v-1h3v6.265c0 .535.517.558 1 .735v.999z" />
+                  </svg>
+                  &nbsp; Details
+                </div>
+              </div>
             </div>
           </div>
 
@@ -237,7 +292,7 @@ export default class Projects extends Component {
             </div>
 
             <div className="btn-container">
-              <div className="github-container">
+              <div className="btn-position">
                 <a
                   href="https://github.com/jaredar1232/System-Design--BestBuy"
                   className="btn-text"
@@ -254,7 +309,19 @@ export default class Projects extends Component {
                   &nbsp; Github
                 </a>
               </div>
-              <ModalButton />
+              <div className="btn-position">
+                <div className="btn--2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-.001 5.75c.69 0 1.251.56 1.251 1.25s-.561 1.25-1.251 1.25-1.249-.56-1.249-1.25.559-1.25 1.249-1.25zm2.001 12.25h-4v-1c.484-.179 1-.201 1-.735v-4.467c0-.534-.516-.618-1-.797v-1h3v6.265c0 .535.517.558 1 .735v.999z" />
+                  </svg>
+                  &nbsp; Details
+                </div>
+              </div>
             </div>
           </div>
         </section>
