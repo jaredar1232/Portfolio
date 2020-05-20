@@ -4,7 +4,7 @@ import styled from "styled-components";
 const AboutMeWrapper = styled.div`
   .section-about {
     background-color: #181e2e;
-    padding: 40rem 0;
+    padding: 40rem 0 95rem 0;
     color: white;
     margin-top: -20vh;
     z-index: 7;

@@ -103,7 +103,7 @@ const ModalWrapper = styled.div`
     font-size: 2rem;
     font-weight: 700;
     background-image: linear-gradient(
-      to right,
+      to right bottom,
       rgb(102, 201, 255),
       rgb(120, 139, 249)
     );
@@ -112,7 +112,7 @@ const ModalWrapper = styled.div`
     display: inline-block;
     text-decoration: none;
     border-bottom: 1px solid rgb(120, 139, 249);
-    padding: 3px;
+    padding: 5px;
     transition: all 0.2s;
     cursor: pointer;
   }
