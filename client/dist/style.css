@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  /* width: 550px; */
 }
 
 body {
@@ -175,4 +176,9 @@ body {
   border-bottom: 1px solid white;
   clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
+background-color: blue;
+color:yellow;
+box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+color: rgba(78, 232, 243, 0.8);
+
 } */
