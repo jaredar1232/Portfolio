@@ -182,7 +182,40 @@ color:yellow;
 box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 color: rgba(78, 232, 243, 0.8);
     background-color: rgb(3, 3, 3);
-grid-template-columns: ;
-<a class="icon-link linkedin brand"></a>
-transition: all: .3s;;
-} */
+
+transition: all .3s;;
+color: rgba(255, 255, 255, 0.589);
+}
+
+ .btn-text {
+    &:link,
+    &:visited {
+      font-size: 2rem;
+      font-weight: 700;
+      background-image: linear-gradient(
+        to right bottom,
+        rgb(102, 201, 255),
+        rgb(120, 139, 249)
+      );
+      -webkit-background-clip: text;
+      color: transparent;
+      display: inline-block;
+      text-decoration: none;
+      border-bottom: 1px solid rgb(120, 139, 249);
+      padding: 5px;
+      transition: all 0.2s;
+    }
+  }
+
+  .btn-text:hover {
+    -webkit-background-clip: unset;
+    color: white;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+    border-radius: 2px;
+  }
+
+  .btn-text:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(0);
+  } */
