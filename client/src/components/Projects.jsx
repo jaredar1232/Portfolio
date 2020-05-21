@@ -33,7 +33,7 @@ const ProjectsWrapper = styled.div`
     font-weight: 700;
     display: inline-block;
     background-image: linear-gradient(
-      to right,
+      to right bottom,
       rgb(102, 201, 255),
       rgb(120, 139, 249)
     );
@@ -78,7 +78,7 @@ export default class Projects extends Component {
         details: [
           "Expanded data set from 100 unique records to 10,000,000 unique records",
           "Reduced database setup time by 80% by using automated CSV generation and batch import (~12 min down to ~2.5 min) ",
-          "Optimized query times between Mongoose ORM, MongoDB, and PostgreSQL; used indexing to reduce queries to an average of under 0.1 ms per request ",
+          "Optimized query times between Mongoose ODM, MongoDB, and PostgreSQL; used indexing to reduce queries to an average of under 0.1 ms per request ",
           "Deployed separate database and server; optimized 1 EC2 instance to 2000 rps, 0% error rate, and 126ms average response time and 3 nginx load balanced EC2 instances to 3000 rps, 0% error rate, and 63ms response time",
         ],
       },

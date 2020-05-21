@@ -4,7 +4,7 @@ import styled from "styled-components";
 const AboutMeWrapper = styled.div`
   .section-about {
     background-color: #181e2e;
-    padding: 40rem 0 95rem 0;
+    padding: 40rem 0 100rem 0;
     color: white;
     margin-top: -20vh;
     z-index: 7;
@@ -20,7 +20,7 @@ const AboutMeWrapper = styled.div`
     font-weight: 700;
     display: inline-block;
     background-image: linear-gradient(
-      to right,
+      to right bottom,
       rgb(102, 201, 255),
       rgb(120, 139, 249)
     );
@@ -73,7 +73,7 @@ const AboutMeWrapper = styled.div`
   .composition {
     position: relative;
     &__photo {
-      width: 55%;
+      width: 70%;
       box-shadow: 0 1.5rem 4rem black;
       border-radius: 5px;
       position: absolute;

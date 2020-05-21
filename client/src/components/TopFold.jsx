@@ -118,8 +118,8 @@ const TopFoldWrapper = styled.div`
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
     background-color: rgba(0, 0, 0, 0.8);
-    border: rgba(78, 232, 243, 0.8) solid 1px;
-    color: rgba(78, 232, 243, 0.8);
+    border: rgb(102, 201, 255) solid 1px;
+    color: rgb(102, 201, 255);
   }
 
   .btn:active {
